@@ -10,11 +10,11 @@ mm = int(input('digite a media menssal do produto: '))
 pa = int(input('digite o preço atual do produto: '))
 pn = pa
 
-if mm < 500 & pa < 30:
+if mm < 500 and pa < 30:
     pn = pa * 1.10
-elif mm < 1000 :
+elif mm < 1000 and mm>=500 and pa >=30 and pa<80:
     pn = pa * 1.15
-elif mm >= 1000 :
+elif mm >= 1000 and pa >=80:
     pn = pa * 0.95
 else:
     print(f'condição não prevista, preço atual mantido')
